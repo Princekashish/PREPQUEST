@@ -20,11 +20,11 @@ function Header() {
           Find Your Privious year Question Paper
         </h1>
       </div>
-      <div onClick={Navbar} className={`relative z-10 cursor-pointer lg:hidden`}>
-        {navbar ? <X size={30} className="text-white" /> : <Menu size={30} />}
+      <div onClick={Navbar} className={`relative z-50 cursor-pointer lg:hidden`}>
+        {navbar ? <X size={30} className="text-white fixed right-5 top-10" /> : <Menu size={30} />}
       </div>
       <nav
-        className={`fixed h-screen w-full bg-black top-0 left-0 transition-opacity duration-500 ease-in-out ${
+        className={`fixed h-screen w-full bg-black top-0 left-0 transition-opacity duration-500 ease-in-out z-20  ${
           navbar ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
