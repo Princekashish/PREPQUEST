@@ -44,7 +44,7 @@ function Footer() {
   ];
 
   return (
-    <div className="font-sf-pro p-5 h-[55vh] lg:h-[40vh]  md:h-[25vh]">
+    <div className="font-sf-pro p-5 h-[55vh] lg:h-[40vh]  md:h-[25vh] text-black">
       <div className="flex flex-col justify-center items-center md:flex-row md:gap-8 lg:gap-0">
         <h1 className="capitalize text-2xl font-bold tracking-tight text-center hidden lg:block">
           Find Previous Year Question Papers

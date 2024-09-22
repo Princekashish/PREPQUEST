@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -10,15 +11,15 @@ function Header() {
   console.log(navbar);
 
   return (
-    <div className=" shadow-sm w-full flex justify-between p-5 ">
+    <div className=" shadow-sm w-full flex justify-between p-5 text-black">
       {/* logo */}
       <div>
         <h1 className="lg:hidden uppercase text-xl font-sf-pro font-semibold tracking-tight leading-7">
           prepquest
         </h1>
-        <h1 className="lg:block uppercase text-sm hidden font-sf-pro font-semibold tracking-tight leading-7">
+       <Link href="/"> <h1 className="lg:block uppercase cursor-pointer text-sm hidden font-sf-pro font-semibold tracking-tight leading-7">
           Find Your Privious year Question Paper
-        </h1>
+        </h1></Link>
       </div>
       <div onClick={Navbar} className={`relative z-50 cursor-pointer lg:hidden`}>
         {navbar ? <X size={30} className="text-white fixed right-5 top-10" /> : <Menu size={30} />}

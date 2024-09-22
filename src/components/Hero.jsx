@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { MoveRight } from "lucide-react";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 
 function Hero() {
@@ -72,9 +73,11 @@ function Hero() {
         </h1>
         <p className="font-light md:text-3xl lg:text-sm">Ace your exams with ease</p>
         <div id="mrtext" className="flex justify-center items-center  gap-3 opacity-0  translate-y-20">
+          <Link href="/Collage">
           <button className="bg-black text-white textwhite px-8 py-3 rounded-full shadow-xl capitalize tracking-tighter hover:bg-orange-600 duration-500 md:text-3xl lg:text-sm">
             Get started
           </button>
+          </Link>
           <button className="flex justify-center gap-1 items-center px-8 hover:bg-black hover:text-white py-2 rounded-full shadow-xl capitalize tracking-tighter md:text-3xl lg:text-sm">
             learn more <MoveRight />
           </button>
